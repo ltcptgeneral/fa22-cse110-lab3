@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="icon" href="icon.png">
+		<title>Meeting Notes - 10/3</title>
+	</head>
+	<body>
+		<header>
+			<div id="header">
+				<h1>Project Team 29 - First Meeting</h1>
+				<h2>Brainstorming Project Goals</h2>
+				<h2>10/3/2022</h2>
+				<h3>Navigation</h3>
+				<nav>
+					<ul>
+					<li><a href="#attendance">Attendance</a></li>
+					<li><a href="#agenda">Agenda</a></li>
+					<li><a href="#unfinished">Unfinished Items</a></li>
+					<li><a href="#urgent">Urgent Items</a></li>
+					<li><a href="#other">Other Items</a></li>
+					<li><a href="#diagrams">Diagrams/Slides</a></li>
+					<li><a href="#recordings">Meeting Recordings</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<hr/>
+		
+		<main>
+			<section id="admin_items">
+			<div id="attendance">
+				<h3>Attendance:</h3>
+				<ul>
+					<li>Arthur Lu</li>
+					<li>Bob</li>
+					<li>Joe</li>
+					<li>Kathy</li>
+				</ul>
+			</div>
+
+			<div id="agenda">
+				<h3>Agenda</h3>
+				<ol>
+					<li>Introductions</li>
+					<li>Team Bonding Activity</li>
+					<li>Discuss Expectations</li>
+					<li>Brainstorm Session</li>
+					<li>Discuss Initial Ideas</li>
+					<li><i>If there is time: Finalize Project Goals</i></li>
+				</ol>
+			</div>
+			</section>
+
+			<section id="action_items">
+			<div id="unfinished">
+				<h3>Unfinished Items</h3>
+				<ul>
+					<li>None!</li>
+				</ul>
+			</div>
+
+			<div id="urgent">
+				<h3>Urgent Items</h3>
+				<ul>
+					<li><strong>Need to reschedule next meeting!</strong></li>
+					<li>Fill out <a href="#poll">poll</a> to determine <em>meeting time and format</em> for 10/28</li>
+				</ul>
+			</div>
+
+			<div id="other">
+				<h3>Other Items</h3>
+				<ul>
+					<li>Bob wants to know if people would be interested in a group outing next weekend. <b>Send a message in slack channel</b>.</li>
+				</ul>
+			</div>
+			</section>
+
+			<section id="meeting_items">
+			<div id="diagrams">
+				<h3>Diagrams/Slides</h3>
+				<p>Bob's Wireframe</p>
+				<details>
+					<summary>Wireframe showing a compact layout</summary>
+					<img src="wireframe-1.png" alt="bob's wireframe"/>
+				</details>
+				<p>Kathy's Wireframe</p>
+				<details>
+					<summary>Wireframe showing a sparse layout</summary>
+					<img src="wireframe-2.png" alt="kathy's wireframe"/>
+				</details>
+			</div>
+
+			<div id="recordings">
+				<h3>Meeting Recordings</h3>
+				<p>Audio:</p>
+				<audio src="audio.mp3" controls></audio>
+				<p>Video:</p>
+				<video src="video.mp4" controls></video>
+			</div>
+			</section>
+		</main>
+
+		<hr/>
+
+		<div id="poll">
+			<h3>Poll for 10/28 Meeting Format</h3>
+		</div>
+			<form>
+				<fieldset id="personal_info">
+					<legend>Personal Info</legend>
+					<label>Name: </label><input type="text"><br/>
+					<label>Email: </label><input type="text"><br/>
+				</fieldset>
+				<fieldset id="meet_time">
+					<legend>Meeting Time</legend>
+					<label>Date: </label><input type="date"><br/>
+					<div>
+						<label>Time: </label>
+						<input type="checkbox"><label>10:00 - 11:00</label>
+						<input type="checkbox"><label>11:00 - 12:00</label>
+						<input type="checkbox"><label>12:00 - 13:00</label>
+						<input type="checkbox"><label>13:00 - 14:00</label>
+						<input type="checkbox"><label>14:00 - 15:00</label>
+					</div>
+				</fieldset>
+				<fieldset>
+					<legend>Meeting Method</legend>
+					<input type="radio"><label>In Person</label><br/>
+					<input type="radio"><label>Remote</label><br/>
+
+					<label>In Person Location: </label><select name="inperson_method">
+						<option value="Jacobs Hall">Jacobs Hall</option>
+						<option value="CSE Building">CSE Building</option>
+						<option value="Price Center">Price Center</option>
+					</select>
+
+					<legend>Remote Method: </legend><input list="remote_method">
+					<datalist id="method">
+						<option value="Zoom">
+						<option value="Slack">
+						<option value="Discord">
+					</datalist>
+				</fieldset>
+				<fieldset>
+					<legend>Other Comments</legend>
+					<textarea></textarea>
+				</fieldset>
+				<button type="button">Submit</button>
+				</form>
+			</form>
+		<hr/>
+
+		<footer id="footer">
+			<span id="footer_span">
+				<p>Scribe: Arthur <br/> <a href="mailto:a8lu@ucsd.edu">a8lu@ucsd.edu</a></p>
+			</span>
+		</footer>
+	</body>
+</html>
