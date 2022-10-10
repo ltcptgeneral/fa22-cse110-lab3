@@ -1,2 +1,2 @@
-# Lab 2 - Arthur Lu
-[https://ltcptgeneral.github.io/CSE110_Lab2/](https://ltcptgeneral.github.io/CSE110_Lab2/)
+# Lab 3 - Arthur Lu
+[https://ltcptgeneral.github.io/fa22-cse110-lab3/](https://ltcptgeneral.github.io/fa22-cse110-lab3/)
