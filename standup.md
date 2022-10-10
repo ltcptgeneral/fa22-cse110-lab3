@@ -24,7 +24,7 @@
 
 ### Goals For Today
 
-- Some new list of goals for the coming week
+- Some new list of goals for today
 
 ### Long Term Goals
 
