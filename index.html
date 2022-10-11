@@ -3,24 +3,29 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="icon" href="icon.png">
+		<link rel="stylesheet" href="style.css" type="text/css">
 		<title>Meeting Notes - 10/3</title>
+		
+		<style>
+
+		</style>
 	</head>
 	<body>
 		<header>
-			<div id="header">
-				<h1>Project Team 29 - First Meeting</h1>
-				<h2>Brainstorming Project Goals</h2>
-				<h2>10/3/2022</h2>
-				<h3>Navigation</h3>
+			<div class="section-group" id="header">
+				<h1 class="std-text">Project Team 29 - First Meeting</h1>
+				<h2 class="std-text">Brainstorming Project Goals</h2>
+				<h2 class="std-text">10/3/2022</h2>
+				<h3 class="std-text">Navigation</h3>
 				<nav>
 					<ul>
-					<li><a href="#attendance">Attendance</a></li>
-					<li><a href="#agenda">Agenda</a></li>
-					<li><a href="#unfinished">Unfinished Items</a></li>
-					<li><a href="#urgent">Urgent Items</a></li>
-					<li><a href="#other">Other Items</a></li>
-					<li><a href="#diagrams">Diagrams/Slides</a></li>
-					<li><a href="#recordings">Meeting Recordings</a></li>
+					<li class="list-text"><a class="link-text"href="#attendance">Attendance</a></li>
+					<li class="list-text"><a class="link-text"href="#agenda">Agenda</a></li>
+					<li class="list-text"><a class="link-text"href="#unfinished">Unfinished Items</a></li>
+					<li class="list-text"><a class="link-text"href="#urgent">Urgent Items</a></li>
+					<li class="list-text"><a class="link-text"href="#other">Other Items</a></li>
+					<li class="list-text"><a class="link-text"href="#diagrams">Diagrams/Slides</a></li>
+					<li class="list-text"><a class="link-text"href="#recordings">Meeting Recordings</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -30,73 +35,73 @@
 		
 		<main>
 			<section id="admin_items">
-			<div id="attendance">
-				<h3>Attendance:</h3>
+			<div class="section-group" id="attendance">
+				<h3 class="std-text">Attendance:</h3>
 				<ul>
-					<li>Arthur Lu</li>
-					<li>Bob</li>
-					<li>Joe</li>
-					<li>Kathy</li>
+					<li class="list-text">Arthur Lu</li>
+					<li class="list-text">Bob</li>
+					<li class="list-text">Joe</li>
+					<li class="list-text">Kathy</li>
 				</ul>
 			</div>
 
-			<div id="agenda">
-				<h3>Agenda</h3>
+			<div class="section-group" id="agenda">
+				<h3 class="std-text">Agenda</h3>
 				<ol>
-					<li>Introductions</li>
-					<li>Team Bonding Activity</li>
-					<li>Discuss Expectations</li>
-					<li>Brainstorm Session</li>
-					<li>Discuss Initial Ideas</li>
-					<li><i>If there is time: Finalize Project Goals</i></li>
+					<li class="list-text">Introductions</li>
+					<li class="list-text">Team Bonding Activity</li>
+					<li class="list-text">Discuss Expectations</li>
+					<li class="list-text">Brainstorm Session</li>
+					<li class="list-text">Discuss Initial Ideas</li>
+					<li class="list-text"><i>If there is time: Finalize Project Goals</i></li>
 				</ol>
 			</div>
 			</section>
 
 			<section id="action_items">
-			<div id="unfinished">
-				<h3>Unfinished Items</h3>
+			<div class="section-group" id="unfinished">
+				<h3 class="std-text">Unfinished Items</h3>
 				<ul>
-					<li>None!</li>
+					<li class="list-text">None!</li>
 				</ul>
 			</div>
 
-			<div id="urgent">
-				<h3>Urgent Items</h3>
+			<div class="section-group" id="urgent">
+				<h3 class="std-text">Urgent Items</h3>
 				<ul>
-					<li><strong>Need to reschedule next meeting!</strong></li>
-					<li>Fill out <a href="#poll">poll</a> to determine <em>meeting time and format</em> for 10/28</li>
+					<li class="list-text"><strong>Need to reschedule next meeting!</strong></li>
+					<li class="list-text">Fill out <a class="link-text"href="#poll">poll</a> to determine <em>meeting time and format</em> for 10/28</li>
 				</ul>
 			</div>
 
-			<div id="other">
-				<h3>Other Items</h3>
+			<div class="section-group" id="other">
+				<h3 class="std-text">Other Items</h3>
 				<ul>
-					<li>Bob wants to know if people would be interested in a group outing next weekend. <b>Send a message in slack channel</b>.</li>
+					<li class="list-text">Bob wants to know if people would be interested in a group outing next weekend. <b>Send a message in slack channel</b>.</li>
 				</ul>
 			</div>
 			</section>
 
 			<section id="meeting_items">
-			<div id="diagrams">
-				<h3>Diagrams/Slides</h3>
-				<p>Bob's Wireframe</p>
+			<div class="section-group" id="diagrams">
+				<h3 class="std-text">Diagrams/Slides</h3>
+				<p class="std-text">Bob's Wireframe</p>
 				<details>
 					<summary>Wireframe showing a compact layout</summary>
 					<img src="wireframe-1.png" alt="bob's wireframe">
 				</details>
-				<p>Kathy's Wireframe</p>
+				<p class="std-text">Kathy's Wireframe</p>
 				<details>
 					<summary>Wireframe showing a sparse layout</summary>
 					<img src="wireframe-2.png" alt="kathy's wireframe">
 				</details>
 			</div>
 
-			<div id="recordings">
-				<h3>Meeting Recordings</h3>
-				<p>Audio:</p>
+			<div class="section-group" id="recordings">
+				<h3 class="std-text">Meeting Recordings</h3>
+				<p class="std-text">Audio:</p>
 				<audio src="audio.mp3" controls></audio>
-				<p>Video:</p>
+				<p class="std-text">Video:</p>
 				<video src="video.mp4" controls></video>
 			</div>
 			</section>
@@ -104,9 +109,8 @@
 
 		<hr>
 
-		<div id="poll">
-			<h3>Poll for 10/28 Meeting Format</h3>
-		</div>
+		<div class="section-group" id="poll">
+			<h3 class="std-text">Poll for 10/28 Meeting Format</h3>
 			<form>
 				<fieldset id="personal_info">
 					<legend>Personal Info</legend>
@@ -151,10 +155,11 @@
 				</fieldset>
 				<button type="button">Submit</button>
 			</form>
+		</div>
 		<hr>
 
 		<footer id="footer">
-			<p>Scribe: <span id="footer_span">Arthur</span> <br> <a href="mailto:a8lu@ucsd.edu">a8lu@ucsd.edu</a></p>
+			<p class="std-text">Scribe: <span id="footer_span">Arthur</span> <br> <a class="link-text"href="mailto:a8lu@ucsd.edu">a8lu@ucsd.edu</a></p>
 		</footer>
 	</body>
 </html>
