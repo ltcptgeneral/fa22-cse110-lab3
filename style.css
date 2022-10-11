@@ -1,8 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+/*Set background color, default text color, default text font.*/
 * {
-	font-family: monospace;
+	background-color: black;
+	color: #FFFFFF;
+	font-family: 'Ubuntu Mono', monospace;
 }
 
+/*Make headers a special blue color*/
+h1, h2, h3 {
+	color: hsl(200, 100%, 50%);
+}
+
+/*Standard text properties*/
 .std-text {
+	margin: 20px 0mm 1pc 0in;
+}
+
+/*Set link colors to a nice mint green.*/
+a {
+	color: rgb(0, 255, 128);
+}
+
+a:active {
+	color: rgb(255, 0, 128);
+}
+
+/*Add extra top padding to header*/
+#header {
+	padding: 25px 10px 0px 0px;
+	position: static;
+}
+
+/*Remove bullet points from navigation list*/
+#nav-list {
+	list-style-type: none;
+	position: relative;
+	left: -2em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/*Add some left and right margin to each nav item*/
+nav li {
+	margin: 0px 5px 0px 5px;
+}
+
+#title {
+	margin: auto;
+	text-align: center;
+	padding-top: 0px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#subtitle {
+	margin: auto;
+	text-align: center;
+	padding: 0px 0px 10px 0px;
+}
+
+#date {
+	margin: auto;
+	text-align: center;
+	padding: 0px 0px 20px 0px;
+}
+
+#poll {
+	border-style: solid;
+	border-color: red;
+	border-width: 5px;
+	border-radius: 5px;
+}
+
+p {
+	display: inline;
+}
+
+audio {
+	width: 64vw;
+	max-width: 1920px;
+}
+
+video {
+	width: 64vw;
+	max-width: 1920px;
+	height: 38vw;
+	max-height: 1080px;
+}
+
+#submit {
+	background-color: white;
 	color: black;
-	margin: 20px 0px 20px 0px;
+}
+
+#submit:hover {
+	background-color: green;
+	color: black;
+}
+
+fieldset {
+	display: block;
+}
+
+#rec-grid {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto;
+	justify-items: center;
+}
+
+h3[target="_centertext"] {
+	text-align: center;
+}
+
+ul > li {
+	margin-left: -1vw;
+}
+
+/*If a link follows text, highlight the link*/
+p ~ a {
+	background-color: green;
+	color: purple;
+}
+
+/*Add extra space between the last form fieldset and submit button*/
+fieldset + button {
+	margin-top: 25px;
+}
+
+footer.footer {
+	width: 20vw;
+	margin-left: 40vw;
+	margin-right: 40vw;
 }

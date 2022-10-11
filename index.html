@@ -7,25 +7,60 @@
 		<title>Meeting Notes - 10/3</title>
 		
 		<style>
-
+			/*Make every div 90% when less than 1080p*/
+			@media screen and (max-width: 1080px) {
+				.section-group {
+					width: 90vw;
+					margin-top: 0;
+					margin-bottom: 0;
+					margin-left: 5vw;
+					margin-right: 5vw;
+					display: block;
+				}
+				/*Make hr the same width of divs*/
+				hr {
+					width: 90vw;
+					margin-left: 5vw;
+					margin-right: 5vw;
+					border: 0.1vh solid white;
+				}
+			}
+			/*Make every div 75% when greater than 1080p*/
+			@media screen and (min-width: 1080px) {
+				.section-group {
+					width: 70vw;
+					margin-top: 0;
+					margin-bottom: 0;
+					margin-left: 15vw;
+					margin-right: 15vw;
+					display: block;
+				}
+				/*Make hr the same width of divs*/
+				hr {
+					width: 70vw;
+					margin-left: 15vw;
+					margin-right: 15vw;
+					border: 0.1vh solid white;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<header>
 			<div class="section-group" id="header">
-				<h1 class="std-text">Project Team 29 - First Meeting</h1>
-				<h2 class="std-text">Brainstorming Project Goals</h2>
-				<h2 class="std-text">10/3/2022</h2>
-				<h3 class="std-text">Navigation</h3>
+				<h1 class="std-text" id="title" style="text-decoration: underline;">Project Team 29 - First Meeting</h1>
+				<h2 class="std-text" id="subtitle">Brainstorming Project Goals</h2>
+				<h2 class="std-text" id="date">10/3/2022</h2>
+				<h3 class="std-text" target="_centertext">Navigation</h3>
 				<nav>
-					<ul>
-					<li class="list-text"><a class="link-text"href="#attendance">Attendance</a></li>
-					<li class="list-text"><a class="link-text"href="#agenda">Agenda</a></li>
-					<li class="list-text"><a class="link-text"href="#unfinished">Unfinished Items</a></li>
-					<li class="list-text"><a class="link-text"href="#urgent">Urgent Items</a></li>
-					<li class="list-text"><a class="link-text"href="#other">Other Items</a></li>
-					<li class="list-text"><a class="link-text"href="#diagrams">Diagrams/Slides</a></li>
-					<li class="list-text"><a class="link-text"href="#recordings">Meeting Recordings</a></li>
+					<ul id="nav-list">
+					<li><a class="link-text"href="#attendance">Attendance</a></li>
+					<li><a class="link-text"href="#agenda">Agenda</a></li>
+					<li><a class="link-text"href="#unfinished">Unfinished Items</a></li>
+					<li><a class="link-text"href="#urgent">Urgent Items</a></li>
+					<li><a class="link-text"href="#other">Other Items</a></li>
+					<li><a class="link-text"href="#diagrams">Diagrams/Slides</a></li>
+					<li><a class="link-text"href="#recordings">Meeting Recordings</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -38,22 +73,22 @@
 			<div class="section-group" id="attendance">
 				<h3 class="std-text">Attendance:</h3>
 				<ul>
-					<li class="list-text">Arthur Lu</li>
-					<li class="list-text">Bob</li>
-					<li class="list-text">Joe</li>
-					<li class="list-text">Kathy</li>
+					<li>Arthur Lu</li>
+					<li>Bob</li>
+					<li>Joe</li>
+					<li>Kathy</li>
 				</ul>
 			</div>
 
 			<div class="section-group" id="agenda">
 				<h3 class="std-text">Agenda</h3>
 				<ol>
-					<li class="list-text">Introductions</li>
-					<li class="list-text">Team Bonding Activity</li>
-					<li class="list-text">Discuss Expectations</li>
-					<li class="list-text">Brainstorm Session</li>
-					<li class="list-text">Discuss Initial Ideas</li>
-					<li class="list-text"><i>If there is time: Finalize Project Goals</i></li>
+					<li>Introductions</li>
+					<li>Team Bonding Activity</li>
+					<li>Discuss Expectations</li>
+					<li>Brainstorm Session</li>
+					<li>Discuss Initial Ideas</li>
+					<li><i>If there is time: Finalize Project Goals</i></li>
 				</ol>
 			</div>
 			</section>
@@ -62,22 +97,22 @@
 			<div class="section-group" id="unfinished">
 				<h3 class="std-text">Unfinished Items</h3>
 				<ul>
-					<li class="list-text">None!</li>
+					<li>None!</li>
 				</ul>
 			</div>
 
 			<div class="section-group" id="urgent">
 				<h3 class="std-text">Urgent Items</h3>
 				<ul>
-					<li class="list-text"><strong>Need to reschedule next meeting!</strong></li>
-					<li class="list-text">Fill out <a class="link-text"href="#poll">poll</a> to determine <em>meeting time and format</em> for 10/28</li>
+					<li><strong>Need to reschedule next meeting!</strong></li>
+					<li>Fill out <a class="link-text"href="#poll">poll</a> to determine <em>meeting time and format</em> for 10/28</li>
 				</ul>
 			</div>
 
 			<div class="section-group" id="other">
 				<h3 class="std-text">Other Items</h3>
 				<ul>
-					<li class="list-text">Bob wants to know if people would be interested in a group outing next weekend. <b>Send a message in slack channel</b>.</li>
+					<li>Bob wants to know if people would be interested in a group outing next weekend. <b>Send a message in slack channel</b>.</li>
 				</ul>
 			</div>
 			</section>
@@ -99,10 +134,12 @@
 
 			<div class="section-group" id="recordings">
 				<h3 class="std-text">Meeting Recordings</h3>
-				<p class="std-text">Audio:</p>
-				<audio src="audio.mp3" controls></audio>
-				<p class="std-text">Video:</p>
-				<video src="video.mp4" controls></video>
+				<div id="rec-grid">
+					<p class="std-text">Audio:</p>
+					<audio src="audio.mp3" controls></audio>
+					<p class="std-text">Video:</p>
+					<video src="video.mp4" controls></video>
+				</div>
 			</div>
 			</section>
 		</main>
@@ -153,13 +190,14 @@
 					<legend>Other Comments</legend>
 					<textarea></textarea>
 				</fieldset>
-				<button type="button">Submit</button>
+				<button type="button" id="submit">Submit</button>
 			</form>
 		</div>
 		<hr>
 
-		<footer id="footer">
-			<p class="std-text">Scribe: <span id="footer_span">Arthur</span> <br> <a class="link-text"href="mailto:a8lu@ucsd.edu">a8lu@ucsd.edu</a></p>
+		<footer class="footer">
+			<p class="std-text">Scribe:</p> <span id="footer_span">Arthur</span>
+			<a class="link-text"href="mailto:a8lu@ucsd.edu">a8lu@ucsd.edu</a>
 		</footer>
 	</body>
 </html>
