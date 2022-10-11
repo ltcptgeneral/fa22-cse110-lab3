@@ -131,7 +131,7 @@ p ~ a {
 
 /*Add extra space between the last form fieldset and submit button*/
 fieldset + button {
-	margin-top: 25px;
+	margin-top: 1vh;
 }
 
 footer.footer {
