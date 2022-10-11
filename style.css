@@ -117,8 +117,10 @@ h3[target="_centertext"] {
 	text-align: center;
 }
 
-ul > li {
-	margin-left: -1vw;
+/*Give ordered lists some extra vertical spacing*/
+ol > li {
+	margin-top: 5px;
+	margin-bottom: 5px;
 }
 
 /*If a link follows text, highlight the link*/
